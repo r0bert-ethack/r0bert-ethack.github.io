@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web3 Security Researcher - r0bert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+fA6J0ENV5lJSZ9T2skn66Ax24ZkZK7+NwhnZ7s"
+    crossorigin="anonymous"
+  />
+  <!-- Google Fonts: VT323 -->
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <!-- FontAwesome (for icons, optional) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnH2N6nKqJLgXC3Hxi07Ep/bQOcNC3wNqnGaYALC8QA3PMiaCiOWh+bbRRuCHumg1kI24gZyg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Bio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contests">Contests</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Introduction -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <img src="https://i.imgur.com/f3zvuBy.jpeg" alt="r0bert_profile_pic" />
+      <img src="https://i.imgur.com/XNMXU7d.jpeg" alt="r0bert profile picture">
+      <h1>r0bert - Roberto Reigada</h1>
+      <p>
+        In 2021, r0bert transitioned from elite red team operations, specializing in creating FUD payloads that successfully bypassed industry-leading EDR systems to becoming a dedicated Web3 security researcher.
+      </p>
+      <p>
+        At Halborn, he led the EVM audit team for two years, delivering dozens of critical security audits. 
+      </p>
+      <p>
+        Currently, as a Lead Security Researcher at Spearbit and Guardian Audits, r0bert has personally audited and secured high-impact protocols including numerous algorithmic stablecoins, lending protocols, decentralized exchanges, AMMs, DAOs and blockchain games.
+      </p>
+      <p>
+        Utilizing advanced fuzzing tools like Medusa, Echidna and Foundry, r0bert’s audits have protected protocols with hundreds of millions in TVL. His hands-on expertise extends beyond auditing, with active involvement in smart contract development and bug bounty engagements. Notably, in September 2022, r0bert identified and responsibly disclosed a critical vulnerability in the Beanstalk protocol managing $14 million TVL, preventing a potential exploitation.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio / Audits Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Project name</th>
+              <th>Type</th>
+              <th>Report Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Cozy Finance</td>
+                <td>DeFi protection market</td>
+                <td><a href="pdfs/cantina_cozy_apr2023.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>NounsDAO</td>
+                <td>DAO</td>
+                <td><a href="pdfs/Nouns-Spearbit-Security-Review.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Quantum Fair</td>
+                <td>Betting protocol</td>
+                <td><a href="pdfs/report-cantinacode-quantumfair.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>DeFi Wonderland OpUSDC</td>
+                <td>Bridge</td>
+                <td><a href="pdfs/cantina_wonderland_jul2024.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Panoptic</td>
+                <td>Perps DEX</td>
+                <td><a href="pdfs/cantina_panoptic_october_2024.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Smardex</td>
+                <td>Perps DEX</td>
+                <td><a href="pdfs/12-18-2024_Smardex_USDN.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Sonic Staking</td>
+                <td>Staking</td>
+                <td><a href="pdfs/Beethoven-Sonic-Staking-Spearbit-Security-Review-December-2024.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Flood</td>
+                <td>DEX aggregator</td>
+                <td><a href="pdfs/cantina_flood_december2024.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Collar Protocol</td>
+                <td>Lending</td>
+                <td><a href="pdfs/Collar-Spearbit-Security-Review-December-2024.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>eGMX</td>
+                <td>GMX Integration</td>
+                <td><a href="pdfs/2025-01-22_eGMX.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>USDT Arbitrum upgrade</td>
+                <td>LayerZero OFT</td>
+                <td><a href="pdfs/USDT_Arbitrum_Upgrade.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>MUX3 Protocol</td>
+                <td>Perps DEX</td>
+                <td><a href="pdfs/2025-02-06_MUX_Perps.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Riskiit</td>
+                <td>Blockchain game/casino</td>
+                <td><a href="pdfs/cantina_riskiit_february2025.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>SheepCoin</td>
+                <td>Blockchain game</td>
+                <td><a href="pdfs/sheepcoin-security-review-final.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Arcadia</td>
+                <td>Crosschain order book</td>
+                <td><a href="pdfs/report-cantinacode-khalani-0218.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Orderly Vault</td>
+                <td>Crosschain vault</td>
+                <td><a href="pdfs/2025-02-24_Orderly_Vault.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Synthetix TLX Protocol v2</td>
+                <td>Leveraged tokens</td>
+                <td><a href="pdfs/2025-03-01_Synthetix_TLX_V2.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+                <td>Union</td>
+                <td>Solidity IBC implementation</td>
+                <td><a href="pdfs/report-cantinacode-union-0317.pdf" class="btn btn-primary">View report</a></td>
+              </tr>
+            <tr>
+              <td>InfiniFi</td>
+              <td>Yield Aggregator</td>
+              <td><a href="pdfs/report-cantinacode-infinifi-0303.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+              <td>Uniswap</td>
+              <td>EIP-7702 Delegation</td>
+              <td><a href="pdfs/report-cantinacode-uniswap-0411.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+              <td>ODX</td>
+              <td>Wrapped assets protocol</td>
+              <td><a href="pdfs/report-cantinacode-odx-0425.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+              <td>Tenor</td>
+              <td>Lending Protocol order book</td>
+              <td><a href="pdfs/Tenor_Lending_report.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+              <td>Kiln</td>
+              <td>ERC4626 Vaults</td>
+              <td><a href="pdfs/report-cantinacode-kiln-0506.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+            <tr>
+              <td>Predicate</td>
+              <td>Signing Library for Uniswap V4 Hooks</td>
+              <td><a href="pdfs/report-cantinacode-predicate-0429-complete.pdf" class="btn btn-primary">View report</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contests section -->
+  <section id="contests" class="portfolio">
+    <div class="container">
+      <h2>Contests</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th>Contest name</th>
+              <th>Platform</th>
+              <th>Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>POAP</td>
+                <td>Cantina</td>
+                <td>1st</td>
+            </tr>
+            <tr>
+                <td>YOLO Games</td>
+                <td>Cantina</td>
+                <td>2nd</td>
+            </tr>
+            <tr>
+              <td>Aave V3</td>
+              <td>Cantina</td>
+              <td>3rd</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Roberto Reigada. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS (CDN) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+BD7q56eeP5FmGULeQfDxe76unCOc"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

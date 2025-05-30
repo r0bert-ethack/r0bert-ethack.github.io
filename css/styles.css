@@ -1,0 +1,141 @@
+/* Global Styling */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a;
+    color: #E0E0E0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'VT323', monospace;
+    color: #E0E0E0;
+}
+a {
+    color: #00FF00;
+    text-decoration: none;
+}
+a:hover {
+    color: #00CC00;
+    text-decoration: underline;
+}
+
+/* Navbar */
+nav.navbar {
+    background: #111111;
+}
+nav .navbar-brand, nav .nav-link {
+    color: #E0E0E0 !important;
+}
+nav .nav-link:hover {
+    color: #00FF00 !important;
+}
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+    background: #111111;
+    color: #E0E0E0;
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at center,
+      rgba(0, 255, 0, 0.1) 0%,
+      transparent 70%
+    );
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+.hero img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #00FF00;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+}
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #E0E0E0;
+}
+.table-responsive {
+    display: flex;
+    justify-content: center;
+}
+.table {
+    width: 80%;
+    border: 1px solid #00FF00;
+}
+.table th, .table td {
+    color: #E0E0E0;
+    border: 1px solid #00FF00;
+}
+.table thead th {
+    background-color: #00FF00;
+    color: #000000;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #222222;
+}
+.table-hover tbody tr:hover {
+    background-color: #333333;
+}
+.report-link {
+    color: #00FF00;
+    text-decoration: none;
+}
+.report-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #111111;
+    color: #E0E0E0;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
