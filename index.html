@@ -19,18 +19,10 @@
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <!-- Google Fonts: Montserrat (used for body text) -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- FontAwesome (for icons, optional) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnH2N6nKqJLgXC3Hxi07Ep/bQOcNC3wNqnGaYALC8QA3PMiaCiOWh+bbRRuCHumg1kI24gZyg=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
   <!-- Your custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
@@ -58,8 +50,10 @@
     <!-- Hero / Introduction -->
     <section id="hero" class="hero">
       <div class="hero-content">
-        <img src="https://i.imgur.com/f3zvuBy.jpeg" alt="Headshot of Roberto Reigada (r0bert)" width="140" height="140" loading="lazy" decoding="async" />
-        <img src="https://i.imgur.com/XNMXU7d.jpeg" alt="Real-life headshot of Roberto Reigada (r0bert)" width="140" height="140" loading="lazy" decoding="async" />
+        <div class="hero-avatars">
+          <img src="https://i.imgur.com/f3zvuBy.jpeg" alt="Headshot of Roberto Reigada (r0bert)" width="140" height="140" loading="lazy" decoding="async" />
+          <img src="https://i.imgur.com/XNMXU7d.jpeg" alt="Real-life headshot of Roberto Reigada (r0bert)" width="140" height="140" loading="lazy" decoding="async" />
+        </div>
         <h1>r0bert - Roberto Reigada</h1>
         <p>
           In 2021, r0bert transitioned from elite red team operations, specializing in creating FUD payloads that successfully bypassed industry-leading EDR systems to becoming a dedicated Web3 security researcher.
@@ -73,6 +67,10 @@
         <p>
           Utilizing advanced fuzzing tools like Medusa, Echidna and Foundry, r0bert’s audits have protected protocols with hundreds of millions in TVL. His hands-on expertise extends beyond auditing, with active involvement in smart contract development and bug bounty engagements. Notably, in September 2022, r0bert identified and responsibly disclosed a critical vulnerability in the Beanstalk protocol managing $14 million TVL, preventing a potential exploitation.
         </p>
+        <div class="cta-group">
+          <a href="#portfolio" class="btn btn-primary btn-sm">See portfolio</a>
+          <a href="#contests" class="btn btn-outline-primary btn-sm">Contests</a>
+        </div>
       </div>
     </section>
 
@@ -94,182 +92,182 @@
             <tr>
                 <td>Cozy Finance</td>
                 <td>DeFi protection market</td>
-                <td><a href="pdfs/cantina_cozy_apr2023.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/cantina_cozy_apr2023.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>NounsDAO</td>
                 <td>DAO</td>
-                <td><a href="pdfs/Nouns-Spearbit-Security-Review.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/Nouns-Spearbit-Security-Review.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Quantum Fair</td>
                 <td>Betting protocol</td>
-                <td><a href="pdfs/report-cantinacode-quantumfair.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/report-cantinacode-quantumfair.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>DeFi Wonderland OpUSDC</td>
                 <td>Bridge</td>
-                <td><a href="pdfs/cantina_wonderland_jul2024.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/cantina_wonderland_jul2024.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Panoptic</td>
                 <td>Perps DEX</td>
-                <td><a href="pdfs/cantina_panoptic_october_2024.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/cantina_panoptic_october_2024.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Smardex</td>
                 <td>Perps DEX</td>
-                <td><a href="pdfs/12-18-2024_Smardex_USDN.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/12-18-2024_Smardex_USDN.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Sonic Staking</td>
                 <td>Staking</td>
-                <td><a href="pdfs/Beethoven-Sonic-Staking-Spearbit-Security-Review-December-2024.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/Beethoven-Sonic-Staking-Spearbit-Security-Review-December-2024.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Flood</td>
                 <td>DEX aggregator</td>
-                <td><a href="pdfs/cantina_flood_december2024.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/cantina_flood_december2024.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Collar Protocol</td>
                 <td>Lending</td>
-                <td><a href="pdfs/Collar-Spearbit-Security-Review-December-2024.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/Collar-Spearbit-Security-Review-December-2024.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>eGMX</td>
                 <td>GMX Integration</td>
-                <td><a href="pdfs/2025-01-22_eGMX.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/2025-01-22_eGMX.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>USDT Arbitrum upgrade</td>
                 <td>LayerZero OFT</td>
-                <td><a href="pdfs/USDT_Arbitrum_Upgrade.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/USDT_Arbitrum_Upgrade.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>MUX3 Protocol</td>
                 <td>Perps DEX</td>
-                <td><a href="pdfs/2025-02-06_MUX_Perps.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/2025-02-06_MUX_Perps.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Riskiit</td>
                 <td>Blockchain game/casino</td>
-                <td><a href="pdfs/cantina_riskiit_february2025.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/cantina_riskiit_february2025.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>SheepCoin</td>
                 <td>Blockchain game</td>
-                <td><a href="pdfs/sheepcoin-security-review-final.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/sheepcoin-security-review-final.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Arcadia</td>
                 <td>Crosschain order book</td>
-                <td><a href="pdfs/report-cantinacode-khalani-0218.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/report-cantinacode-khalani-0218.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Orderly Vault</td>
                 <td>Crosschain vault</td>
-                <td><a href="pdfs/2025-02-24_Orderly_Vault.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/2025-02-24_Orderly_Vault.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Synthetix TLX Protocol v2</td>
                 <td>Leveraged tokens</td>
-                <td><a href="pdfs/2025-03-01_Synthetix_TLX_V2.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/2025-03-01_Synthetix_TLX_V2.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
                 <td>Union</td>
                 <td>Solidity IBC implementation</td>
-                <td><a href="pdfs/report-cantinacode-union-0317.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+                <td><a href="pdfs/report-cantinacode-union-0317.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
               </tr>
             <tr>
               <td>InfiniFi</td>
               <td>Yield Aggregator</td>
-              <td><a href="pdfs/report-cantinacode-infinifi-0303.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-infinifi-0303.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Uniswap</td>
               <td>EIP-7702 Delegation</td>
-              <td><a href="pdfs/report-cantinacode-uniswap-0411.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-uniswap-0411.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>ODX</td>
               <td>Wrapped assets protocol</td>
-              <td><a href="pdfs/report-cantinacode-odx-0425.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-odx-0425.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Tenor</td>
               <td>Lending Protocol order book</td>
-              <td><a href="pdfs/Tenor_Lending_report.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/Tenor_Lending_report.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Kiln</td>
               <td>ERC4626 Vaults</td>
-              <td><a href="pdfs/report-cantinacode-kiln-0506.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-kiln-0506.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Predicate</td>
               <td>Signing Library for Uniswap V4 Hooks</td>
-              <td><a href="pdfs/report-cantinacode-predicate-0429-complete.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-predicate-0429-complete.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Uniswap Router Rebates</td>
               <td>Uniswap V4 Hook that facilitates gas rebates</td>
-              <td><a href="pdfs/report-cantinacode-uniswap-0514.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-uniswap-0514.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Uniswap Router Rebates (offchain)</td>
               <td>Off-chain component for Uniswap V4 Hook that facilitates gas rebates</td>
-              <td><a href="pdfs/report-cantinacode-uniswap-zk-0519.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-uniswap-zk-0519.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>InfiniFi upgrade</td>
               <td>Yield Aggregator</td>
-              <td><a href="pdfs/report-cantinacode-infinifi-update.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-infinifi-update.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Telcoin</td>
               <td>Uniswap V4 Hook</td>
-              <td><a href="pdfs/report-cantinacode-telcoin-0602.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-telcoin-0602.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Virtuals</td>
               <td>Uniswap V4 Hook</td>
-              <td><a href="pdfs/report-cantinacode-virtuals-0605.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-virtuals-0605.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Infrared</td>
               <td>iBERA upgrade: EIP 7002 withdrawals + EIP 4788 beacon proofs</td>
-              <td><a href="pdfs/report-cantinacode-infrared-0616.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-infrared-0616.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>M0</td>
               <td>Uniswap V4 Hook</td>
-              <td><a href="pdfs/Guardian_M0_Uniswap_V4_Hooks_report.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/Guardian_M0_Uniswap_V4_Hooks_report.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Pendle/InfiniFi</td>
               <td>Pendle Standardized Yield(SY) farm</td>
-              <td><a href="pdfs/report-cantinacode-infinifi-0709-pendle-sy.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-infinifi-0709-pendle-sy.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>InfiniFi upgrade</td>
               <td>New multiasset farms</td>
-              <td><a href="pdfs/report-cantinacode-infinifi-0709-contracts.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-infinifi-0709-contracts.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>Bitcorn OFT</td>
               <td>Cross-chain lending/yield protocol</td>
-              <td><a href="pdfs/cantina_bitcorn_july2025.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/cantina_bitcorn_july2025.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>246 Club</td>
               <td>ERC4626 Vault & Lending protocol</td>
-              <td><a href="pdfs/re-a-token-Report.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/re-a-token-Report.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
             <tr>
               <td>MarginZero</td>
               <td>Options/perpetual protocol built on top of UniswapV3</td>
-              <td><a href="pdfs/report-cantinacode-stryke-0806.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View report</a></td>
+              <td><a href="pdfs/report-cantinacode-stryke-0806.pdf" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">View report</a></td>
             </tr>
           </tbody>
         </table>

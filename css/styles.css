@@ -2,6 +2,17 @@
     --bg: #111;
     --fg: #E0E0E0;
     --accent: #00FF00;
+    /* Extended color scales */
+    --bg-1: #111; /* base */
+    --bg-2: #141414; /* slightly lighter for stripes */
+    --bg-3: #1a1a1a; /* hover surface */
+    --accent-600: #00FF00; /* primary */
+    --accent-500: #00E600; /* hover */
+    --accent-400: #00CC00; /* active/focus */
+    /* UI tokens */
+    --radius: 8px;
+    --shadow: 0 6px 16px rgba(0,0,0,.25);
+    accent-color: var(--accent);
 }
 
 /* Global Styling */
@@ -10,38 +21,57 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--bg);
     color: var(--fg);
+    line-height: 1.65;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'VT323', monospace;
     color: var(--fg);
+}
+a, .btn, .nav-link {
+    transition: color .18s ease-out, background-color .18s ease-out, border-color .18s ease-out, box-shadow .18s ease-out, transform .18s ease-out;
 }
 a {
     color: var(--accent);
     text-decoration: none;
 }
 a:hover {
-    color: #00CC00;
+    color: var(--accent-400);
     text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
 }
 
 /* Primary button theme override */
 .btn-primary{
     --bs-btn-bg: var(--accent);
     --bs-btn-border-color: var(--accent);
-    --bs-btn-hover-bg: #00CC00;
-    --bs-btn-hover-border-color: #00CC00;
+    --bs-btn-hover-bg: var(--accent-400);
+    --bs-btn-hover-border-color: var(--accent-400);
     --bs-btn-color: #000;
 }
+.btn, .form-control {
+    border-radius: var(--radius);
+}
+.btn:hover { box-shadow: 0 4px 12px rgba(0,0,0,.25); }
 
 /* Navbar */
 nav.navbar {
     background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+    border-bottom: 1px solid #222;
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
 }
 nav .navbar-brand, nav .nav-link {
     color: var(--fg) !important;
 }
 nav .nav-link:hover {
     color: var(--accent) !important;
+}
+.navbar .nav-link.active {
+    color: var(--accent) !important;
+    border-bottom: 2px solid var(--accent);
 }
 .navbar-toggler-icon {
     filter: brightness(0) invert(1);
@@ -80,6 +110,17 @@ nav .nav-link:hover {
     z-index: 2;
     max-width: 700px;
 }
+.hero-avatars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+@media (min-width: 576px) {
+    .hero-avatars { flex-direction: row; }
+}
 .hero img {
     width: 140px;
     height: 140px;
@@ -89,8 +130,8 @@ nav .nav-link:hover {
     border: 3px solid var(--accent);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
+.hero h1 { font-size: clamp(2rem, 1.4rem + 2.5vw, 3rem); }
 .hero h1 {
-    font-size: 2.5rem;
     margin-bottom: 10px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -100,6 +141,8 @@ nav .nav-link:hover {
     margin-bottom: 30px;
     line-height: 1.6;
 }
+.hero-content p { max-width: 72ch; margin-left: auto; margin-right: auto; }
+.cta-group { display: inline-flex; gap: 12px; align-items: center; }
 
 /* Portfolio Section */
 .portfolio {
@@ -109,7 +152,7 @@ nav .nav-link:hover {
 .portfolio h2 {
     text-align: center;
     margin-bottom: 40px;
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 1.1rem + 1.2vw, 2rem);
     font-weight: 600;
     color: var(--fg);
 }
@@ -120,20 +163,27 @@ nav .nav-link:hover {
 .table {
     width: 100%;
     border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
 }
 .table th, .table td {
     color: var(--fg);
     border: 1px solid var(--accent);
+    vertical-align: middle;
 }
 .table thead th {
     background-color: var(--accent);
     color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: #222222;
+    background-color: var(--bg-2);
 }
 .table-hover tbody tr:hover {
-    background-color: #333333;
+    background-color: var(--bg-3);
 }
 .report-link {
     color: var(--accent);
@@ -141,6 +191,11 @@ nav .nav-link:hover {
 }
 .report-link:hover {
     text-decoration: underline;
+}
+/* Anchor offset for sticky navbar */
+#hero, #portfolio, #contests { scroll-margin-top: 80px; }
+@media (max-width: 576px) {
+    .table th, .table td { padding: .5rem; }
 }
 
 /* Footer */
@@ -184,4 +239,19 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, .nav-link:focus-visib
     background: #222;
     color: var(--fg);
     padding: 8px 12px;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Selection color */
+::selection {
+    background: var(--accent);
+    color: #000;
 }
